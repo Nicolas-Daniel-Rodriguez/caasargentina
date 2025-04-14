@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio en Construcción</title>
+    <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0.5rem;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .logo {
+            max-width: 31.25rem; /* 500px para escritorio */
+            width: 100%;
+            margin-bottom: 1rem;
+            margin-top: 0;
+            height: auto;
+        }
+
+        .mensaje {
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo {
+                max-width: 18.75rem; /* 300px para móvil */
+            }
+
+            .mensaje {
+                font-size: 1.5rem;
+            }
+
+            dotlottie-player {
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <img src="logo.jpeg" alt="Logo" class="logo">
+    <div class="mensaje">Sitio en construcción...</div>
+    <div> 
+        <dotlottie-player
+            src="https://lottie.host/2d242206-4a2c-44d3-9a62-aa6a8b119469/e6DfWb5oOV.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 18.75rem; height: 10.75rem"  
+            loop
+            autoplay
+        ></dotlottie-player>
+    </div>
+
+   
+</body>
+</html>
