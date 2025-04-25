@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAAS Argentina</title>
     <link rel="icon" type="image/png" href="logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script
   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
   type="module"
@@ -42,6 +43,56 @@
             text-align: center;
         }
 
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 4rem;
+            height: 4rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);   
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .whatsapp-icon i {
+            font-size: 1.7rem;
+        }       
+
+        .phone-icon {
+            position: fixed;
+            bottom: 7rem;
+            right: 2rem;
+            width: 4rem;
+            height: 4rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #007bff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .phone-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .phone-icon i {
+            font-size: 1.5rem;
+        }
+
         @media screen and (max-width: 480px) {
             .logo {
                 max-width: 18.75rem; /* 300px para móvil */
@@ -55,9 +106,27 @@
                 width: 10rem;
                 height: 10rem;
             }
-        }
 
-       
+            .phone-icon {
+                width: 2.5rem;
+                height: 2.5rem; 
+                bottom: 5rem;
+            }
+
+            .phone-icon i {
+                font-size: 0.8rem;
+            }
+
+            .whatsapp-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            }
+
+        .whatsapp-icon i {
+                font-size: 1rem;
+            }
+
+        }
 
     </style>
 </head>
@@ -74,6 +143,12 @@
             autoplay
         ></dotlottie-player>
     </div>
+    <a href="tel:+5491177000543" class="phone-icon" target="_blank">
+        <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/+5491179879999" class="whatsapp-icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
    
 </body>
